@@ -1,0 +1,54 @@
+/* ------ custum fonts ------- */
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLT-55Rm.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueLT-55Rm.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueBold.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Bold.woff2") format("woff2"),
+    url("../fonts/Helvetica-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Oblique.woff2") format("woff2"),
+    url("../fonts/Helvetica-Oblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Light.woff2") format("woff2"),
+    url("../fonts/Helvetica-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.woff2") format("woff2"),
+    url("../fonts/Helvetica.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
