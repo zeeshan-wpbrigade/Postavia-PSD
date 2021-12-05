@@ -57,3 +57,28 @@
 
 /* Main css starts  */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Helvetica";
+}
+.container {
+  max-width: 990px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* banner sec css starts  */
+.banner-section{
+  background: #acafbe url("../img/banner.jpg") center no-repeat;
+  background-size: cover;
+}
+.banner-section .container{
+  display: flex;
+  align-items: center;
+  min-height: 452px;
+
+}
