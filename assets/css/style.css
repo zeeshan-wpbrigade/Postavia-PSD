@@ -64,6 +64,7 @@
 }
 body{
   font-family: "Helvetica";
+  background-image: url(../img/pattern.jpg);
 }
 .container {
   max-width: 990px;
@@ -80,5 +81,167 @@ body{
   display: flex;
   align-items: center;
   min-height: 452px;
-
+  padding: 50px 50px 50px 100px;
 }
+.banner-section .container p {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #ff7500;
+}
+.banner-section .banner-text p span:nth-of-type(1) {
+  color: #3d4e5a;
+}
+.banner-section .banner-text p span:nth-of-type(2) {
+  color: #3d4e5a;
+  font-size: 34px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.banner-section .banner-text p span:nth-of-type(3),
+.banner-section .banner-text p span:nth-of-type(5) {
+  color: #ff7500;
+  font-size: 34px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.banner-section .banner-text p span:nth-of-type(4) {
+  color: #3d4e5a;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  vertical-align: super;
+}
+/* banner section ends  */
+
+
+
+
+/* services-section starts  */
+.services-section{
+   background-color: #ffffff;
+   padding: 20px 0;
+}
+/* top cards  */
+.services-section .top-cards{
+  margin-top: -125px;
+  display: flex;
+}
+.services-section .top-cards .card{
+  background-color: #ff7500;
+  width: 25%;
+  margin: 0px 10px;
+  text-align: center;
+  padding: 25px 20px;
+  color: #ffffff;
+  border-bottom: 4px solid #d84817;
+}
+.services-section .top-cards .card p{
+  font-family: "Titillium Web", sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.services-section .top-cards .card h3{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+/* below cards and forms */
+.services-section .content{
+  display: flex;
+  margin-top: 10px;
+}
+/* services cards  */
+.services-section .service-cards{
+  width: 100%;
+  max-width: calc(100% - 250px);
+  display: flex;
+}
+.services-section .service-cards .card{
+  width: 33.33%;
+  text-align: center;
+  padding: 10px 10px;
+  position: relative;
+}
+.services-section .service-cards .card:not(:last-child):after {
+  content: " ";
+  background-image: url(../img/Forma17copia.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  top: 0;
+  right: 0;
+}
+.services-section .service-cards .card h3{
+  color: #ff7500;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 10px;
+}
+.services-section .service-cards .card h3::after{
+  content: "";
+  height: 5px;
+  width: 10px;
+  background-color: #ff7a19;
+  display: block;
+  clip-path: polygon(100% 0, 0 0, 51% 100%);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.services-section .service-cards .card .img {
+  padding: 10px 0;
+  position: relative;  
+}
+.services-section .service-cards .card .img::before{
+  content: "";
+  color: #ff7500;
+  background-image: url(../img/logo_icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 65%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.services-section .service-cards .card .img::after{
+  content: "";
+  color: #ff7500;
+  background-image: url(../img/shadow.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+}
+
+.services-section .service-cards .card .text {
+  margin-top: 20px;
+}
+.services-section .service-cards .card img {
+  border-radius: 50%;
+}
+.services-section .service-cards .card a {
+  text-decoration: none;
+  color: #ff7500;
+}
+
+
+/* forms  */
+.services-section .forms-sec{
+  width: 250px;
+  border: 1px solid green;
+}
+
+
+/* services-section ends  */
