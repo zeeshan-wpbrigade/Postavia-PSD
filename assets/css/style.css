@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: "Helvetica";
+  font-family: "HelveticaOblique";
   src: url("../fonts/Helvetica-Oblique.woff2") format("woff2"),
     url("../fonts/Helvetica-Oblique.woff") format("woff");
   font-weight: normal;
@@ -52,3 +52,8 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* font css ends  */
+
+/* Main css starts  */
+
