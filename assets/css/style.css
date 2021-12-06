@@ -7,7 +7,7 @@
   font-style: normal;
   font-display: swap;
 }
- 
+
 @font-face {
   font-family: "HelveticaNeue";
   src: url("../fonts/HelveticaNeueBold.woff2") format("woff2"),
@@ -57,12 +57,12 @@
 
 /* Main css starts  */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "Helvetica";
   background-image: url(../img/pattern.jpg);
 }
@@ -73,11 +73,11 @@ body{
 }
 
 /* banner sec css starts  */
-.banner-section{
+.banner-section {
   background: #acafbe url("../img/banner.jpg") center no-repeat;
   background-size: cover;
 }
-.banner-section .container{
+.banner-section .container {
   display: flex;
   align-items: center;
   min-height: 452px;
@@ -116,20 +116,17 @@ body{
 }
 /* banner section ends  */
 
-
-
-
 /* services-section starts  */
-.services-section{
-   background-color: #ffffff;
-   padding: 20px 0;
+.services-section {
+  background-color: #ffffff;
+  padding: 20px 0;
 }
 /* top cards  */
-.services-section .top-cards{
+.services-section .top-cards {
   margin-top: -125px;
   display: flex;
 }
-.services-section .top-cards .card{
+.services-section .top-cards .card {
   background-color: #ff7500;
   width: 25%;
   margin: 0px 10px;
@@ -138,12 +135,12 @@ body{
   color: #ffffff;
   border-bottom: 4px solid #d84817;
 }
-.services-section .top-cards .card p{
+.services-section .top-cards .card p {
   font-family: "Titillium Web", sans-serif;
   font-size: 19px;
   text-transform: uppercase;
 }
-.services-section .top-cards .card h3{
+.services-section .top-cards .card h3 {
   font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -151,17 +148,17 @@ body{
   line-height: 0.8;
 }
 /* below cards and forms */
-.services-section .content{
+.services-section .content {
   display: flex;
   margin-top: 10px;
 }
 /* services cards  */
-.services-section .service-cards{
+.services-section .service-cards {
   width: 100%;
   max-width: calc(100% - 250px);
   display: flex;
 }
-.services-section .service-cards .card{
+.services-section .service-cards .card {
   width: 33.33%;
   text-align: center;
   padding: 10px 10px;
@@ -178,7 +175,7 @@ body{
   top: 0;
   right: 0;
 }
-.services-section .service-cards .card h3{
+.services-section .service-cards .card h3 {
   color: #ff7500;
   text-transform: uppercase;
   font-size: 18px;
@@ -186,7 +183,7 @@ body{
   position: relative;
   margin-bottom: 10px;
 }
-.services-section .service-cards .card h3::after{
+.services-section .service-cards .card h3::after {
   content: "";
   height: 5px;
   width: 10px;
@@ -198,20 +195,20 @@ body{
 }
 .services-section .service-cards .card .img {
   padding: 10px 0;
-  position: relative;  
+  position: relative;
 }
-.services-section .service-cards .card .img::before{
+.services-section .service-cards .card .img::before {
   content: "";
   color: #ff7500;
   background-image: url(../img/logo_icon.svg);
   background-repeat: no-repeat;
   position: absolute;
   left: 65%;
-  width: 100%;
+  width: 50px;
   height: 100%;
   z-index: 1;
 }
-.services-section .service-cards .card .img::after{
+.services-section .service-cards .card .img::after {
   content: "";
   color: #ff7500;
   background-image: url(../img/shadow.png);
@@ -236,12 +233,413 @@ body{
   color: #ff7500;
 }
 
-
 /* forms  */
-.services-section .forms-sec{
+.services-section .forms-sec {
   width: 250px;
-  border: 1px solid green;
+}
+.services-section .forms-sec .buttons {
+  display: flex;
+  background-color: #d9d7d7;
+}
+.services-section .forms-sec .buttons button {
+  color: #fff;
+  background: #ff7a19;
+  cursor: pointer;
+  border: none;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 4px 20px;
+  width: 100%;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.services-section .forms-sec .buttons button.active {
+  background-color: #d9d7d7;
+  color: #000;
+}
+.services-section .forms-sec .text p {
+  background-color: #636363;
+  padding: 4px 0;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Helvetica";
+  text-align: center;
+}
+
+.services-section .forms-sec .forms {
+  display: none;
+}
+.active {
+  display: block !important;
+}
+
+.services-section .forms-sec .forms form {
+  display: flex;
+  flex-direction: column;
+}
+.services-section .forms-sec form label {
+  color: #000;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.services-section .forms-sec form select {
+  height: 27px;
+}
+.services-section .forms-sec .forms form input[type="submit"] {
+  margin-top: 8px;
+  background-color: #ff7a19;
+  color: #fff;
+  border: none;
+  padding: 6px 0px;
+}
+
+/* services-section ends  */
+
+/* main section css starts */
+.main {
+  padding: 10px 0;
+}
+.main .container {
+  display: flex;
+}
+
+.main .main-content {
+  width: calc(100% - 250px);
+}
+.main .main-content .upper-slider {
+  display: flex;
+}
+.main .upper-slider .top-slider {
+  width: 50%;
+  min-height: 337px;
+}
+
+.main .upper-slider .information {
+  width: 50%;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+}
+.main .upper-slider .information .heading {
+  font-size: 36px;
+  line-height: 66px;
+  color: #fd7605;
+  font-weight: 600;
+  font-family: "Titillium Web";
+  text-align: left;
+}
+.main .upper-slider .information .desc {
+  font-size: 14px;
+  line-height: 13px;
+  color: #fd7605;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: left;
+}
+.main .upper-slider .information .para {
+  font-size: 13px;
+  line-height: 15px;
+  color: #454545;
+  font-family: "Helvetica";
+  text-align: left;
+  margin-top: 20px;
+}
+.main .upper-slider .information .btn {
+  font-size: 17px;
+  background-color: #ff7a19;
+  letter-spacing: 0px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  padding: 4px 10px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-family: "Helvetica";
+  box-shadow: 0.07px -0.998px 0px rgba(197, 80, 66, 0.75);
+}
+
+.main .upper-slider .banner-ad1 {
+  padding: 5px 0;
+}
+.main .upper-slider .banner-ad1 img {
+  width: 100%;
+  height: 100%;
+}
+.main .upper-slider .banner-ad2 {
+  padding: 5px 0;
+}
+.main .upper-slider .banner-ad2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .aside {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -15px;
+}
+.main .aside .news-letter {
+  background: #fff;
+  padding: 10px 10px 5px 10px;
+}
+.main .aside .news-letter form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.main .aside .news-letter form input[type="text"] {
+  height: 28px;
+  padding: 4px 10px;
+}
+.main .aside .news-letter form input[type="submit"] {
+  margin-top: 10px;
+  text-transform: uppercase;
+  padding: 6px;
+  color: #fff;
+  border: none;
+  background-color: #ff7a19;
+
+  font-size: 17px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: bold;
+  box-shadow: 0.07px -0.998px 0px rgba(197, 80, 66, 0.75);
+}
+
+.main .calender {
+  background: #fff;
+  padding: 10px 10px 20px 10px;
+  margin-top: 5px;
+}
+.main .calender .buttons {
+  display: flex;
+  width: 100%;
+}
+.main .calender .buttons button {
+  font-size: 12px;
+  line-height: 17px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  min-width: 100%;
+  background-color: #ff7a19;
+  border: none;
+  padding: 4px 20px;
+}
+.main .calender .buttons .active {
+  background-color: #636363;
+}
+.main .calender form {
+  margin-top: 10px;
+}
+.main .calender form input[type="date"] {
+  height: 28px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 31px;
+  color: #686868;
+  font-weight: 300;
+  padding: 4px 10px;
+
+  position: relative;
+}
+/* Hide Calendar Icon In Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.main .calender form input[type="date"]:before {
+  content: "";
+  background-image: url(../img/calendar.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  right: 12px;
+}
+
+.main .twitter {
+  background-image: url(../img/twitter_post.jpg);
+  margin-top: 10px;
+}
+.main iframe {
+  max-width: 100%;
+  border: none;
+  background: none;
+}
+/* main section css ends  */
+
+/* Footer css satrts  */
+.contact-sec {
+  background-color: #3d4e5a;
+  padding-bottom: 100px;
+}
+.contact-sec .container {
+  display: flex;
+}
+
+.contact-sec .contact-cards {
+  display: flex;
+  max-width: calc(100% - 305px);
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.contact-sec .contact-cards .card {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  background: #3d4e5a;
+  text-align: center;
+  padding: 20px 30px 10px 30px;
+}
+.contact-sec .contact-cards .card h3 {
+  font-family: "HelveticaNeue";
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+}
+.contact-sec .contact-cards .card h3 > span {
+  font-size: 21px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.contact-sec .contact-cards .card:nth-child(even) {
+  box-shadow: 0 0 5px #000;
+  z-index: 1;
+}
+
+.contact-sec .contact-details {
+  width: 305px;
+  border-left: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+}
+.contact-sec .contact-details .phone-num {
+  display: flex;
+  padding: 20px 10px 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.contact-sec .phone-num .content {
+  margin-left: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.contact-sec .phone-num .content h3 {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.contact-sec .phone-num .content h3 > span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.contact-sec .phone-num .content h2 {
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 28px;
+  color: #f87e27;
+  font-weight: bold;
+}
+.contact-sec .phone-num .content h5 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.contact-sec .phone-num .content h4 {
+  font-size: 28px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact-sec .location{
+  display: flex;
+  padding: 20px 10px 20px;
+  border-bottom: 1px solid #fff;
+}
+.contact-sec .location .content {
+  margin-left: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.contact-sec .location .content h3 {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.contact-sec .location .content p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.contact-sec .directors{
+  display: flex;
+  padding: 20px 0px 20px 10px;
+  border-bottom: 1px solid #fff;
+}
+.contact-sec .directors .content {
+  margin-left: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.contact-sec .directors .content h3 {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 
-/* services-section ends  */
+.contact-sec .email-sec{
+  display: flex;
+  padding: 20px 0px 20px 10px;
+}
+.contact-sec .email-sec .content {
+  margin-left: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.contact-sec .email-secrs .content h3 {
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.contact-sec .email-sec p{
+  font-size: 12px;
+  text-transform: lowercase;
+}
+.contact-sec .email-sec p>span{
+  color: #fd7605;
+}
+.contact-sec .email-sec h2{
+  font-size: 28px;
+  font-weight: 600;
+}
+.contact-sec .email-sec .content h5 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+
