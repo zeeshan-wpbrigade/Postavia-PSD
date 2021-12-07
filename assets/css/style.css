@@ -237,6 +237,9 @@ body {
 /* forms  */
 .services-section .forms-sec {
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
 }
 .services-section .forms-sec .buttons {
   display: flex;
@@ -280,6 +283,9 @@ body {
 
 .services-section .forms-sec .forms {
   display: none;
+  padding: 0 14px 2px 14px;
+  box-shadow: 0 0 2px black;
+
 }
 .active {
   display: block !important;
@@ -301,6 +307,7 @@ body {
 
 .services-section .forms-sec form select {
   height: 27px;
+  outline: none;
 }
 .services-section .forms-sec .forms form input[type="submit"] {
   margin-top: 8px;
