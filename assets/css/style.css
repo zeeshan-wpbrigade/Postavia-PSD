@@ -240,8 +240,15 @@ body {
 }
 .services-section .forms-sec .buttons {
   display: flex;
-  background-color: #d9d7d7;
+  max-width: 100%;
 }
+.services-section .forms-sec .buttons #formbtn-1{
+  width: 50%;
+}
+.services-section .forms-sec .buttons #formbtn-2{
+  width: 50%;
+}
+
 .services-section .forms-sec .buttons button {
   color: #fff;
   background: #ff7a19;
@@ -250,8 +257,7 @@ body {
   font-size: 11px;
   line-height: 18px;
   font-weight: 500;
-  padding: 4px 20px;
-  width: 100%;
+  padding: 4px 0px;
   text-transform: capitalize;
   transition: 0.3s linear;
   cursor: pointer;
@@ -259,6 +265,7 @@ body {
 .services-section .forms-sec .buttons button.active {
   background-color: #d9d7d7;
   color: #000;
+  opacity: 0.5;
 }
 .services-section .forms-sec .text p {
   background-color: #636363;
@@ -441,6 +448,13 @@ body {
   display: flex;
   width: 100%;
 }
+.main .calender .buttons #btn-1{
+ width: 50%;
+}
+.main .calender .buttons #btn-2{
+  width: 50%;
+ }
+
 .main .calender .buttons button {
   font-size: 12px;
   line-height: 17px;
@@ -450,7 +464,7 @@ body {
   min-width: 100%;
   background-color: #ff7a19;
   border: none;
-  padding: 4px 20px;
+  padding: 4px 0px;
 }
 .main .calender .buttons .active {
   background-color: #636363;
@@ -515,7 +529,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: calc(100% - 305px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 3px;
+  align-content: baseline;
+  padding: 5px 3px;
 }
 .contact-sec .contact-cards .card {
   display: flex;
@@ -676,7 +691,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .footer .advertisement-bar .container img {
   height: 100%;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .footer .bottom-footer {
