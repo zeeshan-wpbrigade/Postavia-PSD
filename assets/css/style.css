@@ -124,12 +124,12 @@ body {
 /* top cards  */
 .services-section .top-cards {
   margin-top: -125px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 .services-section .top-cards .card {
   background-color: #ff7500;
-  width: 25%;
-  margin: 0px 10px;
   text-align: center;
   padding: 25px 20px;
   color: #ffffff;
@@ -156,10 +156,11 @@ body {
 .services-section .service-cards {
   width: 100%;
   max-width: calc(100% - 250px);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .services-section .service-cards .card {
-  width: 33.33%;
   text-align: center;
   padding: 10px 10px;
   position: relative;
@@ -217,7 +218,7 @@ body {
   position: absolute;
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 20px;
   z-index: 2;
   display: flex;
 }
@@ -314,6 +315,7 @@ body {
 
 .main .main-content {
   width: calc(100% - 250px);
+  padding-right: 8px;
 }
 .main .main-content .upper-slider {
   display: flex;
@@ -321,6 +323,9 @@ body {
 .main .upper-slider .top-slider {
   width: 50%;
   min-height: 337px;
+}
+.main .upper-slider .top-slider img {
+  width: 100%;
 }
 
 .main .upper-slider .information {
@@ -366,17 +371,21 @@ body {
   box-shadow: 0.07px -0.998px 0px rgba(197, 80, 66, 0.75);
 }
 
-.main .upper-slider .banner-ad1 {
+.main .bottom-slider .below-slider img{
+  width: 100%;
+}
+
+.main .banner-ad1 {
   padding: 5px 0;
 }
-.main .upper-slider .banner-ad1 img {
+.main .banner-ad1 > img {
   width: 100%;
   height: 100%;
 }
-.main .upper-slider .banner-ad2 {
+.main .banner-ad2 {
   padding: 5px 0;
 }
-.main .upper-slider .banner-ad2 img {
+.main .banner-ad2 img {
   width: 100%;
   height: 100%;
 }
@@ -386,6 +395,14 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: -15px;
+}
+.main .aside .aside-banners{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .aside .aside-banners img{
+  width: 100%;
+  margin-bottom: 5px;
 }
 .main .aside .news-letter {
   background: #fff;
@@ -474,6 +491,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .main .twitter {
   background-image: url(../img/twitter_post.jpg);
+  background-repeat: no-repeat;
   margin-top: 10px;
 }
 .main iframe {
@@ -483,7 +501,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* main section css ends  */
 
-/* Footer css satrts  */
+/* contact css satrts  */
 .contact-sec {
   background-color: #3d4e5a;
   padding-bottom: 100px;
@@ -493,18 +511,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .contact-sec .contact-cards {
-  display: flex;
+  
   max-width: calc(100% - 305px);
-  flex-wrap: wrap;
-  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 3px;
 }
 .contact-sec .contact-cards .card {
-  width: 33.33%;
   display: flex;
   flex-direction: column;
   background: #3d4e5a;
   text-align: center;
-  padding: 20px 30px 10px 30px;
+  margin: 1px;
+  padding: 20px 0;
 }
 .contact-sec .contact-cards .card h3 {
   font-family: "HelveticaNeue";
@@ -572,7 +591,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: bold;
 }
 
-.contact-sec .location{
+.contact-sec .location {
   display: flex;
   padding: 20px 10px 20px;
   border-bottom: 1px solid #fff;
@@ -593,7 +612,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 400;
 }
 
-.contact-sec .directors{
+.contact-sec .directors {
   display: flex;
   padding: 20px 0px 20px 10px;
   border-bottom: 1px solid #fff;
@@ -609,8 +628,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 400;
 }
 
-
-.contact-sec .email-sec{
+.contact-sec .email-sec {
   display: flex;
   padding: 20px 0px 20px 10px;
 }
@@ -624,14 +642,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 32px;
   font-weight: 500;
 }
-.contact-sec .email-sec p{
+.contact-sec .email-sec p {
   font-size: 12px;
   text-transform: lowercase;
 }
-.contact-sec .email-sec p>span{
+.contact-sec .email-sec p > span {
   color: #fd7605;
 }
-.contact-sec .email-sec h2{
+.contact-sec .email-sec h2 {
   font-size: 28px;
   font-weight: 600;
 }
@@ -641,5 +659,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff;
   font-weight: 400;
 }
+.contact-sec .email-sec .content h5 a {
+  text-decoration: none;
+  color: #fff;
+}
 
+/* footer css starts  */
+.footer .advertisement-bar {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.footer .advertisement-bar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer .advertisement-bar .container img {
+  height: 100%;
+  margin-right: 10px;
+}
 
+.footer .bottom-footer {
+  background-color: #ff7a19;
+  padding: 30px 0 60px 0;
+}
+.footer .bottom-footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .bottom-footer .links {
+  width: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer .bottom-footer .links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.footer .bottom-footer .links ul > li > a {
+  font-size: 11px;
+  line-height: 13px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-right: 20px;
+}
+
+.footer .bottom-footer .site-logo {
+  display: flex;
+  width: 240px;
+}
+
+/* footer css ends  */

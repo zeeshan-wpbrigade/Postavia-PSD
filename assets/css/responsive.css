@@ -1,0 +1,124 @@
+/* For small Devices */
+@media only screen and (max-width: 768px) {
+  .banner-section .container {
+    display: flex;
+    align-items: center;
+    min-height: 350px;
+    padding: 50px 50px 50px 100px;
+  }
+
+  .services-section .top-cards {
+    margin-top: -100px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* below cards and forms */
+  .services-section .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-section .service-cards {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-section .forms-sec {
+    width: 100%;
+  }
+
+  .main .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .main-content {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .main .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .contact-sec .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-sec .contact-details {
+    width: 100%;
+  }
+
+  .contact-sec .contact-cards {
+    max-width: 100%;
+    margin-right: 0px;
+  grid-template-columns: repeat(3, 1fr);
+
+  }
+  .footer .bottom-footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .bottom-footer .links {
+    width: 100%;
+  }
+  .footer .bottom-footer .links ul > li > a {
+    margin-top: 10px;
+  }
+
+  .footer .bottom-footer .site-logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .main .aside .aside-banners img{
+    width: 50%;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* For V.Small Screens  */
+@media only screen and (max-width: 480px) {
+  .services-section .top-cards {
+    margin-top: -100px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services-section .service-cards {
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services-section .service-cards .card:not(:last-child):after {
+    content: none;
+  }
+  .services-section .service-cards .card .img::before {
+    content: "";
+    left: 60%;
+  }
+  .contact-sec .contact-cards .card {
+    width: 100%;
+  }
+  
+  .contact-sec .contact-cards {
+  grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .main .main-content .upper-slider {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .upper-slider .top-slider {
+    width: 100%;
+  }
+  
+  .main .upper-slider .information {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+  }
+  .main .aside .aside-banners img{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

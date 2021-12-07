@@ -11,15 +11,15 @@ $(document).ready(function () {
         $("#form-2").addClass("active");
         $("#formbtn-2").addClass("active");
       });
-
+ 
 
       $(".top-slider").slick({
         dots: true,
         infinite: true,
         arrows: true,
     
-        // prevArrow: $(".left-arrow"),
-        // nextArrow: $(".right-arrow"),
+        prevArrow: $(".left-arrow"),
+        nextArrow: $(".right-arrow"),
     
         speed: 300,
         slidesToShow: 1,
