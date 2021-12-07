@@ -72,6 +72,297 @@ body {
   margin: 0 auto;
 }
 
+
+
+.notification-bar{
+  background-color: #3c4e5a;
+  border-top: 2px solid #777777;
+  border-bottom: 24px solid #ffffff;
+  outline: 1px solid rgb(228, 228, 228);
+}
+.notification-bar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.notification-bar .left-btns {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.notification-bar .left-btns a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.notification-bar .left-btns a:hover {
+  text-decoration: underline;
+}
+.notification-bar .ayuda {
+  background-color: #ff7500;
+  font-size: 13px;
+  text-transform: capitalize;
+  padding: 6px 9px;
+  margin-right: 12px;
+  margin-bottom: 1px;
+}
+.notification-bar .mapa {
+  font-size: 12px;
+  padding: 5px 0 9px 0;
+  margin-right: 12px;
+}
+.notification-bar .link {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  top: -3px;
+  padding-left: 2px;
+  margin-right: 9px;
+}
+
+.notification-bar .link span:nth-child(1) {
+  font-size: 12px;
+  letter-spacing: -4px;
+}
+.notification-bar .link span:nth-child(2) {
+  font-size: 14px;
+  letter-spacing: -4px;
+}
+.notification-bar .link span:nth-child(3) {
+  font-size: 15px;
+}
+.notification-bar .datetime {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  border-left: 1px solid white;
+  padding: 5px 11px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -2px;
+}
+
+
+.notification-bar .profile-side {
+  margin-left: auto;
+  display: flex;
+  align-items: stretch;
+  margin-right: 9px;
+}
+.notification-bar .profile-side a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: -0.13px;
+  border-left: 1px solid gray;
+  height: 100%;
+}
+.notification-bar .login-btn {
+  position: relative;
+}
+.notification-bar .profile-side .login-btn a {
+  padding: 0 2px 0 12px;
+}
+.notification-bar .profile-side .process-btn a {
+  padding: 0 9px 0 5px;
+}
+.notification-bar .login-btn:after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: rgb(4, 230, 4);
+  display: block;
+  border-radius: 50px;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+.notification-bar .login-btn a img {
+  margin-left: 8px;
+}
+.notification-bar.process-btn {
+  position: relative;
+}
+.notification-bar .process-btn a img {
+  margin-right: 10px;
+}
+.notification-bar .arrow-btn {
+  position: absolute;
+  background-color: #fd7605;
+  padding: 1px 20px;
+  display: block;
+  line-height: 0;
+  bottom: -8px;
+  left: 50%;
+  transform: translatex(-50%);
+  clip-path: polygon(100% 0, 92% 99%, 8% 100%, 0 0);
+}
+
+
+/* logo-bar starts  */
+.logo-bar {
+  background-color: #f4f4f4;
+  padding-block: 12px;
+}
+.logo-bar .container {
+  display: flex;
+  align-items: center;
+}
+.logo-bar .brand-logo img {
+  max-height: 80px;
+}
+.logo-bar .left-logos {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.logo-bar .left-logos li {
+  margin-left: 20px;
+}
+.logo-bar .toggle-btn {
+  margin-left: auto;
+  display: none;
+  cursor: pointer;
+}
+/* logo-bar ends  */
+
+/* nav-bar csss starts  */
+.navbar {
+  background-color: #ff7500;
+}
+.navbar .container{
+  display: flex;
+}
+.navbar .navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+.navbar .navbar-nav > li {
+  position: relative;
+  border-left: 1px solid #ff9a2a;
+}
+.navbar .navbar-nav > li:last-child {
+  border-right: 1px solid #ff9a2a;
+}
+.navbar-nav > li > a {
+  color: #ffffff;
+  padding: 16px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  height: 100%;
+  transition: 0.3s all;
+}
+.navbar-nav > li > a:hover {
+  background-color: #ff9133;
+}
+.navbar-nav > li > a > img {
+  transition: 0.3s all;
+}
+.navbar .form-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.navbar form {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.navbar form input {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-style: italic;
+}
+.navbar form button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+  padding-top: 2px;
+  transition: 0.3s all;
+  border-radius: 50%;
+  padding: 3px 5px;
+}
+.navbar form button:hover {
+  background-color: rgba(255, 255, 255, 0.205);
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: #3c4e5a;
+  min-width: 300px;
+  padding: 20px;
+  transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+}
+.dropdown-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 8px;
+  display: block;
+  transition: 0.3s all;
+}
+.dropdown-menu a:hover {
+  color: #ff9133;
+}
+.dropdown:hover > .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.dropdown:hover > a > img{
+  transform: rotate(-180deg);
+}
+/* nav bar css ends  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* banner sec css starts  */
 .banner-section {
   background: #acafbe url("../img/banner.jpg") center no-repeat;
@@ -131,9 +422,10 @@ body {
 .services-section .top-cards .card {
   background-color: #ff7500;
   text-align: center;
-  padding: 25px 20px;
+  padding: 25px 0px;
   color: #ffffff;
   border-bottom: 4px solid #d84817;
+  position: relative;
 }
 .services-section .top-cards .card p {
   font-family: "Titillium Web", sans-serif;
@@ -233,6 +525,49 @@ body {
   text-decoration: none;
   color: #ff7500;
 }
+.services-section .card .overlay {
+  background: linear-gradient(rgba(71, 71, 71, 0.822), rgba(75, 75, 75, 0.836)),
+    url("../img/overlay-background.jpg") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: 0.3s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.services-section .card:hover .overlay {
+  height: 100%;
+  padding: 10px;
+}
+.services-section .card .overlay p {
+  text-align: center;
+  line-height: 1;
+  font-size: 21px;
+  font-family: "Helvetica";
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+.services-section .card .overlay a {
+  background-color: #ff7500;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Helvetica";
+  font-weight: 300;
+  border: 1px solid white;
+  padding: 1px 12px;
+  transition: 0.3s all;
+}
+.services-section .card .overlay a:hover {
+  background-color: #c25a00;
+}
 
 /* forms  */
 .services-section .forms-sec {
@@ -331,15 +666,66 @@ body {
   width: calc(100% - 250px);
   padding-right: 8px;
 }
+
+/* Slider starts */
 .main .main-content .upper-slider {
   display: flex;
 }
-.main .upper-slider .top-slider {
+
+.main .upper-slider .slider {
   width: 50%;
-  min-height: 337px;
+  position: relative;
+  height: 100%;
 }
-.main .upper-slider .top-slider img {
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.main .upper-slider img {
+  height: 100%;
   width: 100%;
+}
+.main .upper-slider .slider .slider-arrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 20px;
+  width: auto;
+}
+.main .upper-slider .slider .left-arrow {
+  left: 10px;
+}
+.main .upper-slider .slider .right-arrow {
+  right: 10px;
+}
+.main .upper-slider .slick-dots {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  text-align: center;
+}
+.main .upper-slider .slick-dots li {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+.main .upper-slider .slick-dots li button {
+  cursor: pointer;
+  height: 4px;
+  width: 4px;
+  outline: none;
+  background: #ffffff;
+  opacity: 0.3;
+  transition: 0.3s all;
+}
+.main .upper-slider .slick-dots li button:hover {
+  background: #ffffff;
+  opacity: 1;
+}
+.main .upper-slider .slick-dots li.slick-active button {
+  background: #ffffff;
+  opacity: 1;
 }
 
 .main .upper-slider .information {
@@ -384,10 +770,46 @@ body {
   font-family: "Helvetica";
   box-shadow: 0.07px -0.998px 0px rgba(197, 80, 66, 0.75);
 }
+/* .upper-slider ends  */
 
+
+
+
+/* belo slider starts  */
 .main .bottom-slider .below-slider img{
   width: 100%;
 }
+.main .bottom-slider .slick-dots {
+  position: absolute;
+  height: 25px;
+  text-align: center;
+  bottom: 10px;
+}
+.main .bottom-slider .slick-dots li {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+.main .bottom-slider .slick-dots li button {
+  cursor: pointer;
+  height: 4px;
+  width: 4px;
+  outline: none;
+  background: #ffffff;
+  opacity: 0.3;
+  transition: 0.3s all;
+  border-radius: 50px;
+}
+.main .bottom-slider .slick-dots li button:hover {
+  background: #ffffff;
+  opacity: 1;
+}
+.main .bottom-slider .slick-dots li.slick-active button {
+  background: #ffffff;
+  opacity: 1;
+}
+
+/* below slider ends  */
 
 .main .banner-ad1 {
   padding: 5px 0;

@@ -1,12 +1,125 @@
 /* For small Devices */
 @media only screen and (max-width: 768px) {
+
+  .notification-bar .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .notification-bar .profile-side {
+    margin: 5px 0 0 0;
+    padding-block: 5px;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.397);
+  }
+  .notification-bar .profile-side a {
+    border: none;
+  }
+  .notification-bar .datetime {
+    margin-left: auto;
+    border: none;
+  }
+
+  .navbar {
+    padding-block: 0px;
+    position: relative;
+    z-index: 4;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+  }
+  .navbar.active {
+    padding-block: 20px;
+    height: 100vh;
+    overflow: auto;
+  }
+  .navbar .navbar-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navbar .navbar-nav > li {
+    border-left: none;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .navbar .navbar-nav > li:last-child {
+    border-right: none;
+  }
+  .navbar-nav > li > a {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown:hover > a > img{
+    transform: rotate(0);
+  }
+  .dropdown > a > img.active{
+    transform: rotate(-180deg);
+  }
+  .navbar .form-box {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar .form-box form {
+    width: 100%;
+  }
+  .navbar .form-box input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .dropdown-menu {
+    position: relative;
+    min-width: 100%;
+    max-height: 0px;
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+  }
+  .dropdown-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px;
+    display: block;
+    transition: 0.3s all;
+  }
+  .dropdown-menu a:hover {
+    color: #ff9133;
+  }
+  .dropdown-menu.active {
+    max-height: 100vh;
+  }
+  .logo-bar .left-logos {
+    display: none;
+  }
+  .logo-bar .toggle-btn {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .banner-section .container {
     display: flex;
     align-items: center;
     min-height: 350px;
     padding: 50px 50px 50px 100px;
   }
-
+ 
   .services-section .top-cards {
     margin-top: -100px;
     grid-template-columns: repeat(2, 1fr);
@@ -80,6 +193,38 @@
 
 /* For V.Small Screens  */
 @media only screen and (max-width: 480px) {
+
+
+  .notification-bar .container{
+    flex-direction: column;
+  }
+  .notification-bar .profile a {
+    font-size: 10px;
+    letter-spacing: -0.23px;
+    padding: 0 5px;
+  }
+  .notification-bar .datetime {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .services-section .top-cards {
     margin-top: -100px;
     grid-template-columns: repeat(1, 1fr);
