@@ -49,7 +49,6 @@
 
     <!-- custom style stylesheet  -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <header class="header">
@@ -57,13 +56,15 @@
       <div class="notification-bar">
         <div class="container">
           <div class="left-btns">
-            <a href="#" class="ayuda">ayuda</a>
-            <a href="#" class="mapa">Mapa del sitio</a>
-            <a href="#" class="link">
-              <span class="">a</span>
-              <span class="">a</span>
-              <span class="">a</span>
-            </a>
+            <div class="btns">
+              <a href="#" class="ayuda">ayuda</a>
+              <a href="#" class="mapa">Mapa del sitio</a>
+              <a href="#" class="link">
+                <span class="">a</span>
+                <span class="">a</span>
+                <span class="">a</span>
+              </a>
+            </div>
             <p class="datetime">miércoles ,10 de julio de 2015</p>
           </div>
 
@@ -77,9 +78,9 @@
                 />
                 <span>Proceso ante accidente laboral</span>
               </a>
-              <span class="arrow-btn"
+              <!-- <span class="arrow-btn"
                 ><img src="assets/img/arrow.png" alt="arrow"
-              /></span>
+              /></span> -->
             </div>
             <div class="login-btn">
               <a href="#">
@@ -105,9 +106,9 @@
           <a href="#" class="brand-logo">
             <img src="assets/img/positiva_logo.svg" alt="logo" />
           </a>
-          <buttom class="toggle-btn" id="toggle-nav">
-            <img src="assets/img/menu-icon.png" alt="toggle" />
-          </buttom>
+          <button class="toggle-btn" id="toggle-nav">
+            <img src="assets/img/menu-icon.png" alt="toggle" class="image" />
+          </button>
           <ul class="left-logos">
             <li><img src="assets/img/minhacienda.svg" alt="minhacienda" /></li>
             <li><img src="assets/img/todos_por.svg" alt="todos_por" /></li>
@@ -117,67 +118,48 @@
       <!-- logo-bar ends  -->
 
       <!-- nav bar setcion starts  -->
-        <!-- navbar section -->
-  <nav class="navbar">
-    <div class="container">
-      <ul class="navbar-nav">
-        <li><a href="#">inico</a></li>
-        <li class="dropdown">
-          <a href="#">la compañía <img src="assets/img/arrow-dropdown.png" alt="arrow"></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Misión y Visión</a></li>
-            <li><a href="#">Objetivos y Funciones</a></li>
-            <li><a href="#">Organigrama</a></li>
-            <li><a href="#">Propuesta de Valor</a></li>
-            <li><a href="#">Valores</a></li>
-            <li><a href="#">Fortalezas</a></li>
-            <li><a href="#">Nuestra Marca</a></li>
-            <li><a href="#">Directorio de Entidades y Agremiaciones</a></li>
-            <li><a href="#">Certificaciones de Calidad</a></li>
-            <li><a href="#">Reporte linea ética</a></li>
-            <li><a href="#">Ley de Transparencia</a></li>
-            <li><a href="#">Bibliotecas</a></li>
-            <li><a href="#">Listas</a></li>
-            <li><a href="#">Imágenes</a></li>
-            <li><a href="#">Directorio de funcionarios</a></li>
-            <li><a href="#">Intermediarios</a></li>
+      <!-- navbar section -->
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li><a href="#">inico</a></li>
+            <li class="dropdown">
+              <a href="#"
+                >la compañía
+                <img src="assets/img/arrow-dropdown.png" alt="arrow"
+              /></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Misión y Visión</a></li>
+                <li><a href="#">Objetivos y Funciones</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                >arl <img src="assets/img/arrow-dropdown.png" alt="arrow"
+              /></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Beneficios</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                >seguros de vida
+                <img src="assets/img/arrow-dropdown.png" alt="arrow"
+              /></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Accidentes Personales</a></li>
+              </ul>
+            </li>
+            <li><a href="#">atencion al ciudadano</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">arl <img src="assets/img/arrow-dropdown.png" alt="arrow"></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Beneficios</a></li>
-            <li><a href="#">Manual de Usuario</a></li>
-            <li><a href="#">Empleados Afiliados</a></li>
-            <li><a href="#">Positiva Educa</a></li>
-            <li><a href="#">Promoción y Prevención</a></li>
-            <li><a href="#">Servicios en Línea</a></li>
-            <li><a href="#">Testimonios</a></li>
-            <li><a href="#">Notificaciones</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">seguros de vida <img src="assets/img/arrow-dropdown.png" alt="arrow"></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Accidentes Personales</a></li>
-            <li><a href="#">Vida Grupo</a></li>
-            <li><a href="#">Vida Individual</a></li>
-            <li><a href="#">Salud</a></li>
-            <li><a href="#">Exequias</a></li>
-            <li><a href="#">Conmutaciones</a></li>
-            <li><a href="#">Rentas Vitalicias</a></li>
-            <li><a href="#">BEPS</a></li>
-            <li><a href="#">Beneficios</a></li>
-          </ul>
-        </li>
-        <li><a href="#">atencion al ciudadano</a></li>
-      </ul>
 
-      <div>Search-Box</div>
-    </div>
-  </nav>
-  <!-- nav bar section ends  -->
-
+          <div class="search-box">
+            <input type="text" name="" id="" placeholder="Búsqueda" />
+            <input type="submit" value="" />
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar section ends  -->
     </header>
 
     <!-- banner section -->
@@ -203,14 +185,16 @@
           <!-- 1st -->
           <div class="card">
             <div class="img">
-                <img src="assets/img/builder_icon.svg" alt="" />
+              <img src="assets/img/builder_icon.svg" alt="" />
             </div>
             <div class="text">
               <p>Riesgos laborales</p>
               <h3>ARL</h3>
             </div>
             <div class="overlay">
-              <p>Vida Individual<br><br>Vida Grupo<br><br>Accidentes<br>Personales</p>
+              <p>
+                Vida Individual<br /><br />Vida Grupo<br /><br />Accidentes<br />Personales
+              </p>
               <a href="#">ver mas</a>
             </div>
           </div>
@@ -369,16 +353,31 @@
         <div class="main-content">
           <!-- upper slider section  starts-->
           <div class="upper-slider">
-        
-
             <div class="slider">
-              <img class=" slider-arrow left-arrow" src="assets/img/slider-arrow-left.png" alt="arrow">
-              <img class=" slider-arrow right-arrow" src="assets/img/slider-arrow-right.png" alt="arrow">
-              <div class="news-slider">
-                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
-                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
-                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
-                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
+              <img
+                class="slider-arrow left-arrow"
+                src="assets/img/slider-arrow-left.png"
+                alt="arrow"
+              />
+              <img
+                class="slider-arrow right-arrow"
+                src="assets/img/slider-arrow-right.png"
+                alt="arrow"
+              />
+
+              <div class="top-slider">
+                <div>
+                  <img src="assets/img/smily_girl.jpg" alt="thumbnail" />
+                </div>
+                <div>
+                  <img src="assets/img/smily_girl.jpg" alt="thumbnail" />
+                </div>
+                <div>
+                  <img src="assets/img/smily_girl.jpg" alt="thumbnail" />
+                </div>
+                <div>
+                  <img src="assets/img/smily_girl.jpg" alt="thumbnail" />
+                </div>
               </div>
             </div>
 
@@ -440,7 +439,7 @@
 
           <!-- twitter iframe  -->
           <div class="twitter">
-            <a class="twitter-timeline" data-height="305" href="https://twitter.com/PositivaCol?ref_src=twsrc%5Etfw">Tweets by PositivaCol</a>
+            <!-- <iframe style="border:none;" data-tweet-url="https://twitter.com/1joshuatz/status/1178001362690293760" src="data:text/html;charset=utf-8,%3Cblockquote%20class%3D%22twitter-tweet%22%3E%3Cp%20lang%3D%22en%22%20dir%3D%22ltr%22%3EI%20needed%20a%20refresh%20on%20how%20JWT%20%28JSON%20Web%20Tokens%29%20work%2C%20so%20I%20wrote%20up%20a%20simple%20guide%20as%20I%20researched%2C%20and%20published%20it%20on%20%3Ca%20href%3D%22https%3A//t.co/HE7dpgdKP9%22%3Ehttps%3A//t.co/HE7dpgdKP9%3C/a%3E%20/%20%3Ca%20href%3D%22https%3A//twitter.com/hashtag/DEVcommunity%3Fsrc%3Dhash%26amp%3Bref_src%3Dtwsrc%255Etfw%22%3E%23DEVcommunity%3C/a%3E.%20%3Cbr%3E%3Cbr%3EIf%20you%26%2339%3Bve%20been%20putting%20off%20learning%20about%20JWTs%20or%20need%20a%20refresher%2C%20give%20it%20a%20read%21%20-%20%3Ca%20href%3D%22https%3A//t.co/SFNZWUjOCJ%22%3Ehttps%3A//t.co/SFNZWUjOCJ%3C/a%3E%3C/p%3E%26mdash%3B%20Joshua%20T%20%28@1joshuatz%29%20%3Ca%20href%3D%22https%3A//twitter.com/1joshuatz/status/1178001362690293760%3Fref_src%3Dtwsrc%255Etfw%22%3ESeptember%2028%2C%202019%3C/a%3E%3C/blockquote%3E%0A%3Cscript%20async%20src%3D%22https%3A//platform.twitter.com/widgets.js%22%20charset%3D%22utf-8%22%3E%3C/script%3E%0A%3Cstyle%3Ehtml%7Boverflow%3Ahidden%20%21important%3B%7D%3C/style%3E"></iframe> -->
           </div>
 
           <!-- calender  -->
@@ -452,13 +451,7 @@
 
             <div class="calender-input">
               <form action="">
-                <input
-                  type="date"
-                  name=""
-                  value="2018-07-22"
-                  min="2018-01-01"
-                  max="2018-12-31"
-                />
+                <input type="date" name="" value="2018-07-22" />
               </form>
             </div>
           </div>
