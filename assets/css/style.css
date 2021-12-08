@@ -802,9 +802,10 @@ body {
 }
 /* .upper-slider ends  */
 
-/* belo slider starts  */
+/* below slider starts  */
 .main .bottom-slider .below-slider img {
   width: 100%;
+  min-height: 180px;
 }
 .main .bottom-slider .slick-dots {
   position: absolute;
@@ -934,7 +935,6 @@ body {
   position: relative;
 }
 /* Hide Calendar Icon In Chrome */
-input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
@@ -1526,5 +1526,27 @@ For small Devices
   .main .aside .aside-banners img {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  .banner-section{
+    background: #acafbe url(../img/banner-2.jpg) center no-repeat;
+    background-size: cover;
+  }
+  .banner-section .container {
+    align-items: flex-start;
+    padding: 50px 25px 25px 50px;
+  }
+  .banner-section .container p {
+    font-size: 18px;
+  }
+  .banner-section .banner-text p span:nth-of-type(2) {
+    font-size: 30px;
+  }
+  .banner-section .banner-text p span:nth-of-type(3),
+  .banner-section .banner-text p span:nth-of-type(5) {
+    font-size: 30px;
+  }
+  .banner-section .banner-text p span:nth-of-type(4) {
+    font-size: 18px;
   }
 }

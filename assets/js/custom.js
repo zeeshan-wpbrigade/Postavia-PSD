@@ -81,5 +81,9 @@ $(document).ready(function () {
       }
     }
   });
+
+
+  const dateInput = document.querySelector('.date-input');
+
 });
 // jQuery Ends
