@@ -1,9 +1,9 @@
-$(document).ready(function () {
-  //  toogle nav
+// jQuery starts
 
+$(document).ready(function () {
+  // 1. toogle nav OR Navigation Show Burger ICON
   $("#toggle-nav").click(function () {
     $(".navbar").slideToggle();
-
     $("body").toggleClass("overflow");
   });
 
@@ -18,7 +18,8 @@ $(document).ready(function () {
       imgs = 0;
     }
   });
-
+  
+  // 3. Aside Forms Toogle 
   $("#formbtn-1").click(function () {
     $("#form-2").removeClass("active");
     $("#formbtn-2").removeClass("active");
@@ -32,7 +33,7 @@ $(document).ready(function () {
     $("#formbtn-2").addClass("active");
   });
 
-  //toggle dropdown
+  //4. Nav toggle dropdown
   $(".dropdown").click(function () {
     if ($("> .dropdown-menu", this).hasClass("active")) {
       $(".dropdown-menu").removeClass("active");
@@ -45,34 +46,31 @@ $(document).ready(function () {
     }
   });
 
+  // 5. Main Top Slider  
   $(".top-slider").slick({
     dots: true,
     infinite: true,
     arrows: true,
-
     prevArrow: $(".left-arrow"),
     nextArrow: $(".right-arrow"),
-
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
     nav: true,
   });
 
+  // 6. main Bottom slider 
   $(".below-slider").slick({
     dots: true,
     infinite: true,
     arrows: false,
-
-    // prevArrow: $(".left-arrow"),
-    // nextArrow: $(".right-arrow"),
-
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
     nav: true,
   });
 
+  // 7. Just Logo-Bar in Header fixed on mobile
   $(window).scroll(function () {
     if (window.matchMedia("(max-width: 768px)").matches) {
       var scroll = $(window).scrollTop();
@@ -84,3 +82,4 @@ $(document).ready(function () {
     }
   });
 });
+// jQuery Ends
