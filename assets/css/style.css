@@ -55,7 +55,11 @@
 
 /* font css ends  */
 
-/* Main css starts  */
+/******************************************
+*******************************************
+*************  Main Body CSS  *************
+*******************************************
+******************************************/
 
 * {
   margin: 0;
@@ -69,7 +73,6 @@ body {
 .overflow {
   overflow: hidden;
 }
-
 .container {
   max-width: 990px;
   padding: 0 15px;
@@ -139,7 +142,6 @@ body {
   padding-left: 2px;
   margin-right: 9px;
 }
-
 .notification-bar .link span:nth-child(1) {
   font-size: 12px;
   letter-spacing: -4px;
@@ -292,7 +294,6 @@ body {
 .navbar .search-box input[type="submit"]:hover {
   opacity: 0.7;
 }
-
 .navbar .navbar-nav {
   list-style: none;
   display: flex;
@@ -545,7 +546,6 @@ body {
   z-index: 2;
   display: flex;
 }
-
 .services-section .service-cards .card .text {
   margin-top: 20px;
 }
@@ -599,7 +599,6 @@ body {
 .services-section .card .overlay a:hover {
   background-color: #c25a00;
 }
-
 /* forms  */
 .services-section .forms-sec {
   width: 250px;
@@ -617,7 +616,6 @@ body {
 .services-section .forms-sec .buttons #formbtn-2 {
   width: 50%;
 }
-
 .services-section .forms-sec .buttons button {
   color: #fff;
   background: #ff7a19;
@@ -646,7 +644,6 @@ body {
   font-family: "Helvetica";
   text-align: center;
 }
-
 .services-section .forms-sec .forms {
   display: none;
   padding: 0 14px 2px 14px;
@@ -669,7 +666,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .services-section .forms-sec form select {
   height: 27px;
   outline: none;
@@ -681,7 +677,6 @@ body {
   border: none;
   padding: 6px 0px;
 }
-
 /* services-section ends  */
 
 /* main section css starts */
@@ -691,7 +686,6 @@ body {
 .main .container {
   display: flex;
 }
-
 .main .main-content {
   width: calc(100% - 250px);
   padding-right: 8px;
@@ -702,7 +696,6 @@ body {
   display: flex;
   position: relative;
 }
-
 .main .upper-slider .slider {
   width: 50%;
   position: relative;
@@ -712,7 +705,6 @@ body {
   min-height: 337px;
   height: 100%;
 }
-
 .slick-dotted.slick-slider {
   margin-bottom: 0px;
 }
@@ -766,7 +758,6 @@ body {
   background: #ffffff;
   opacity: 1;
 }
-
 .main .upper-slider .information {
   width: 50%;
   padding: 20px 10px 10px 10px;
@@ -844,7 +835,6 @@ body {
   background: #ffffff;
   opacity: 1;
 }
-
 /* below slider ends  */
 
 .main .banner-ad1 {
@@ -861,7 +851,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .main .aside {
   width: 250px;
   display: flex;
@@ -896,14 +885,12 @@ body {
   color: #fff;
   border: none;
   background-color: #ff7a19;
-
   font-size: 17px;
   letter-spacing: 0px;
   line-height: 22px;
   font-weight: bold;
   box-shadow: 0.07px -0.998px 0px rgba(197, 80, 66, 0.75);
 }
-
 .main .calender {
   background: #fff;
   padding: 10px 10px 20px 10px;
@@ -919,7 +906,6 @@ body {
 .main .calender .buttons #btn-2 {
   width: 50%;
 }
-
 .main .calender .buttons button {
   font-size: 12px;
   line-height: 17px;
@@ -940,13 +926,11 @@ body {
 .main .calender form input[type="date"] {
   height: 28px;
   width: 100%;
-
   font-size: 14px;
   line-height: 31px;
   color: #686868;
   font-weight: 300;
   padding: 4px 10px;
-
   position: relative;
 }
 /* Hide Calendar Icon In Chrome */
@@ -955,7 +939,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-
 .main .calender form input[type="date"]:before {
   content: "";
   background-image: url(../img/calendar.jpg);
@@ -963,18 +946,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-position: right;
   height: 100%;
   width: 100%;
-
   position: absolute;
   right: 12px;
 }
-
 .main .twitter {
   margin-top: 10px;
   min-height: 300px;
   max-width: 100%;
   border: 1px solid red;
 }
-
 /* main section css ends  */
 
 /* contact css satrts  */
@@ -985,7 +965,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .contact-sec .container {
   display: flex;
 }
-
 .contact-sec .contact-cards {
   max-width: calc(100% - 305px);
   display: grid;
@@ -1000,7 +979,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 1px;
   padding: 20px 0;
 }
-
 .contact-sec .contact-cards .card h3 {
   font-family: "HelveticaNeue";
   font-weight: 400;
@@ -1019,7 +997,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 0 5px #000;
   z-index: 1;
 }
-
 .contact-sec .contact-details {
   width: 305px;
   border-left: 1px solid #fff;
@@ -1031,13 +1008,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 20px 10px 10px;
   border-bottom: 1px solid #fff;
 }
-
 .contact-sec .phone-num .content {
   margin-left: 15px;
   color: #fff;
   text-transform: capitalize;
 }
-
 .contact-sec .phone-num .content h3 {
   font-size: 19px;
   line-height: 18px;
@@ -1067,7 +1042,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff;
   font-weight: bold;
 }
-
 .contact-sec .location {
   display: flex;
   padding: 20px 10px 20px;
@@ -1088,7 +1062,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 18px;
   font-weight: 400;
 }
-
 .contact-sec .directors {
   display: flex;
   padding: 20px 0px 20px 10px;
@@ -1104,7 +1077,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 28px;
   font-weight: 400;
 }
-
 .contact-sec .email-sec {
   display: flex;
   padding: 20px 0px 20px 10px;
@@ -1156,7 +1128,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 100%;
   margin: 10px;
 }
-
 .footer .bottom-footer {
   background-color: #ff7a19;
   padding: 30px 0 60px 0;
@@ -1187,7 +1158,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: block;
   margin-right: 20px;
 }
-
 .footer .bottom-footer .site-logo {
   display: flex;
   width: 240px;

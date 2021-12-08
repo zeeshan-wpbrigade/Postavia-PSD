@@ -18,8 +18,8 @@ $(document).ready(function () {
       imgs = 0;
     }
   });
-  
-  // 3. Aside Forms Toogle 
+
+  // 3. Aside Forms Toogle
   $("#formbtn-1").click(function () {
     $("#form-2").removeClass("active");
     $("#formbtn-2").removeClass("active");
@@ -46,7 +46,7 @@ $(document).ready(function () {
     }
   });
 
-  // 5. Main Top Slider  
+  // 5. Main Top Slider
   $(".top-slider").slick({
     dots: true,
     infinite: true,
@@ -59,7 +59,7 @@ $(document).ready(function () {
     nav: true,
   });
 
-  // 6. main Bottom slider 
+  // 6. main Bottom slider
   $(".below-slider").slick({
     dots: true,
     infinite: true,
