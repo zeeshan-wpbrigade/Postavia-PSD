@@ -52,6 +52,134 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+    <header class="header">
+      <!-- notification-bar starts  -->
+      <div class="notification-bar">
+        <div class="container">
+          <div class="left-btns">
+            <a href="#" class="ayuda">ayuda</a>
+            <a href="#" class="mapa">Mapa del sitio</a>
+            <a href="#" class="link">
+              <span class="">a</span>
+              <span class="">a</span>
+              <span class="">a</span>
+            </a>
+            <p class="datetime">miércoles ,10 de julio de 2015</p>
+          </div>
+
+          <div class="profile-side">
+            <div class="left-btn">
+              <a href="#">
+                <img
+                  class="user-img"
+                  src="assets/img/user_icon.svg"
+                  alt="user-icon"
+                />
+                <span>Proceso ante accidente laboral</span>
+              </a>
+              <span class="arrow-btn"
+                ><img src="assets/img/arrow.png" alt="arrow"
+              /></span>
+            </div>
+            <div class="login-btn">
+              <a href="#">
+                <span>Iniciar sesión</span>
+                <img
+                  class="user-img"
+                  src="assets/img/login-user.png"
+                  alt="user-icon"
+                />
+              </a>
+              <span class="arrow-btn"
+                ><img src="assets/img/arrow.png" alt="arrow"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- notification bar ends  -->
+
+      <!-- logo-bar starts  -->
+      <div class="logo-bar">
+        <div class="container">
+          <a href="#" class="brand-logo">
+            <img src="assets/img/positiva_logo.svg" alt="logo" />
+          </a>
+          <buttom class="toggle-btn" id="toggle-nav">
+            <img src="assets/img/menu-icon.png" alt="toggle" />
+          </buttom>
+          <ul class="left-logos">
+            <li><img src="assets/img/minhacienda.svg" alt="minhacienda" /></li>
+            <li><img src="assets/img/todos_por.svg" alt="todos_por" /></li>
+          </ul>
+        </div>
+      </div>
+      <!-- logo-bar ends  -->
+
+      <!-- nav bar setcion starts  -->
+        <!-- navbar section -->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li><a href="#">inico</a></li>
+        <li class="dropdown">
+          <a href="#">la compañía <img src="assets/img/arrow-dropdown.png" alt="arrow"></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Misión y Visión</a></li>
+            <li><a href="#">Objetivos y Funciones</a></li>
+            <li><a href="#">Organigrama</a></li>
+            <li><a href="#">Propuesta de Valor</a></li>
+            <li><a href="#">Valores</a></li>
+            <li><a href="#">Fortalezas</a></li>
+            <li><a href="#">Nuestra Marca</a></li>
+            <li><a href="#">Directorio de Entidades y Agremiaciones</a></li>
+            <li><a href="#">Certificaciones de Calidad</a></li>
+            <li><a href="#">Reporte linea ética</a></li>
+            <li><a href="#">Ley de Transparencia</a></li>
+            <li><a href="#">Bibliotecas</a></li>
+            <li><a href="#">Listas</a></li>
+            <li><a href="#">Imágenes</a></li>
+            <li><a href="#">Directorio de funcionarios</a></li>
+            <li><a href="#">Intermediarios</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">arl <img src="assets/img/arrow-dropdown.png" alt="arrow"></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Beneficios</a></li>
+            <li><a href="#">Manual de Usuario</a></li>
+            <li><a href="#">Empleados Afiliados</a></li>
+            <li><a href="#">Positiva Educa</a></li>
+            <li><a href="#">Promoción y Prevención</a></li>
+            <li><a href="#">Servicios en Línea</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">Notificaciones</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">seguros de vida <img src="assets/img/arrow-dropdown.png" alt="arrow"></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Accidentes Personales</a></li>
+            <li><a href="#">Vida Grupo</a></li>
+            <li><a href="#">Vida Individual</a></li>
+            <li><a href="#">Salud</a></li>
+            <li><a href="#">Exequias</a></li>
+            <li><a href="#">Conmutaciones</a></li>
+            <li><a href="#">Rentas Vitalicias</a></li>
+            <li><a href="#">BEPS</a></li>
+            <li><a href="#">Beneficios</a></li>
+          </ul>
+        </li>
+        <li><a href="#">atencion al ciudadano</a></li>
+      </ul>
+
+      <div>Search-Box</div>
+    </div>
+  </nav>
+  <!-- nav bar section ends  -->
+
+    </header>
+
     <!-- banner section -->
     <div class="banner-section">
       <div class="container">
@@ -75,13 +203,15 @@
           <!-- 1st -->
           <div class="card">
             <div class="img">
-              <a href="">
-              <img src="assets/img/builder_icon.svg" alt="" />
-              </a>
+                <img src="assets/img/builder_icon.svg" alt="" />
             </div>
             <div class="text">
-              <p><a href="">Riesgos laborales</a></p>
-              <h3><a href="">ARL</a></h3>
+              <p>Riesgos laborales</p>
+              <h3>ARL</h3>
+            </div>
+            <div class="overlay">
+              <p>Vida Individual<br><br>Vida Grupo<br><br>Accidentes<br>Personales</p>
+              <a href="#">ver mas</a>
             </div>
           </div>
           <!-- 2nd -->
@@ -239,21 +369,17 @@
         <div class="main-content">
           <!-- upper slider section  starts-->
           <div class="upper-slider">
-            <!-- arrows -->
-            <!-- <div class="arrows">
-              <div class="left-arrow">
-                <img src="assets/img/slider-arrow-left.png" alt="" />
-              </div>
-              <div class="right-arrow">
-                <img src="assets/img/slider-arrow-right.png" alt="" />
-              </div>
-            </div> -->
-            <!-- arrows end  -->
+        
 
-            <div class="top-slider">
-              <div><img src="assets/img/smily_girl.jpg" alt="" /></div>
-              <div><img src="assets/img/smily_girl.jpg" alt="" /></div>
-              <div><img src="assets/img/smily_girl.jpg" alt="" /></div>
+            <div class="slider">
+              <img class=" slider-arrow left-arrow" src="assets/img/slider-arrow-left.png" alt="arrow">
+              <img class=" slider-arrow right-arrow" src="assets/img/slider-arrow-right.png" alt="arrow">
+              <div class="news-slider">
+                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
+                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
+                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
+                <div><img src="assets/img/smily_girl.jpg" alt="thumbnail"></div>
+              </div>
             </div>
 
             <div class="information">
@@ -314,19 +440,7 @@
 
           <!-- twitter iframe  -->
           <div class="twitter">
-            <iframe>
-              <a
-                href="https://twitter.com/Postivia?ref_src=twsrc%5Etfw"
-                class="twitter-follow-button"
-                data-show-count="false"
-                >Follow @Postivia</a
-              >
-              <script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-              ></script>
-            </iframe>
+            <a class="twitter-timeline" data-height="305" href="https://twitter.com/PositivaCol?ref_src=twsrc%5Etfw">Tweets by PositivaCol</a>
           </div>
 
           <!-- calender  -->

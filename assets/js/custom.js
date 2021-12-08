@@ -12,8 +12,20 @@ $(document).ready(function () {
         $("#formbtn-2").addClass("active");
       });
  
+       //toggle dropdown
+  $(".dropdown").click(function () {
+    if ($("> .dropdown-menu", this).hasClass("active")) {
+      $(".dropdown-menu").removeClass("active");
+      $(".dropdown > a > img").removeClass("active");
+    } else {
+      $(".dropdown-menu").removeClass("active");
+      $("> .dropdown-menu", this).toggleClass("active");
+      $(".dropdown > a > img").removeClass("active");
+      $("> a > img", this).toggleClass("active");
+    }
+  });
 
-      $(".top-slider").slick({
+      $(".slider").slick({
         dots: true,
         infinite: true,
         arrows: true,
