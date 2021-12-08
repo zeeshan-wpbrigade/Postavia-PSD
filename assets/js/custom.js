@@ -78,12 +78,11 @@ $(document).ready(function () {
         $(".logo-bar").addClass("logo-fix");
       } else {
         $(".logo-bar").removeClass("logo-fix");
+
       }
     }
   });
 
-
-  const dateInput = document.querySelector('.date-input');
 
 });
 // jQuery Ends

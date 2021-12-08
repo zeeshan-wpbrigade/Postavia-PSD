@@ -87,7 +87,7 @@ body {
   position: static;
 }
 .logo-fix {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
   z-index: 20;
@@ -1221,6 +1221,7 @@ For small Devices
 *******************************************
 ******************************************/
 @media only screen and (max-width: 768px) {
+
   /* Responsive notification-bar starts  */
   .notification-bar .container {
     display: flex;
@@ -1457,13 +1458,14 @@ For small Devices
 ******************************************/
 @media only screen and (max-width: 480px) {
   /* Responsive notification-bar starts  */
-  .header {
-    position: static;
-  }
+  
   .logo-bar .brand-logo img {
     max-width: 130px;
   }
 
+  .notification-bar{
+    position: relative !important;
+  }
   .notification-bar .container {
     flex-direction: column;
   }
