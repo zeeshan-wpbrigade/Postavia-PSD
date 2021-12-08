@@ -80,6 +80,15 @@ body {
   top: 0;
   z-index: 10;
 }
+.remove-fix {
+  position: static;
+}
+.logo-fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
 
 /* notification bar starts  */
 .notification-bar {
@@ -1186,14 +1195,49 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* footer css ends  */
 
+/******************************************
+*******************************************
+*************  Media Queries  *************
+*******************************************
+******************************************/
 
-
-
-/************************
-*************************
-***   Media Queries   ***
-*************************
-*************************/
+@media only screen and (max-width: 980px) {
+  .navbar .search-box {
+    padding: 0 4px;
+  }
+  .navbar-nav > li > a {
+    padding: 16px 10px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .navbar .navbar-nav {
+    width: calc(100% - 220px);
+  }
+  .navbar .search-box {
+    padding: 0 4px;
+    width: 220px;
+  }
+  .navbar .search-box input[type="submit"] {
+    width: 28px;
+    height: 44px;
+  }
+  .navbar-nav > li > a {
+    padding: 16px 10px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .navbar-nav > li > a {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .navbar-nav > li > a {
+    padding: 9px 7px;
+    font-size: 11px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -1253,6 +1297,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-left: none;
     margin-bottom: 8px;
     width: 100%;
+  }
+  .navbar .navbar-nav > li a {
+    font-size: 14px;
   }
   .navbar .navbar-nav > li:last-child {
     border-right: none;
@@ -1415,6 +1462,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* For V.Small Screens  */
 @media only screen and (max-width: 480px) {
   /* Responsive notification-bar starts  */
+  .header {
+    position: static;
+  }
+
   .notification-bar .container {
     flex-direction: column;
   }
