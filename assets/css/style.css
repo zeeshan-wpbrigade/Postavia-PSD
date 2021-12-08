@@ -1239,13 +1239,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .navbar {
     display: block !important;
   }
 }
 
-/* For small Devices */
+/******************************************
+******************************************* 
+For small Devices 
+*******************************************
+******************************************/
 @media only screen and (max-width: 768px) {
   /* Responsive notification-bar starts  */
   .notification-bar .container {
@@ -1266,10 +1270,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: none;
   }
 
-  /* Responsive notification-bar ends  */
-
   /* Responsive nav starts  */
-
   .navbar {
     position: relative;
     z-index: 4;
@@ -1394,6 +1395,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     padding-right: 0px;
   }
+
+  .main .upper-slider .information {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    text-align: left;
+  }
+  .main .upper-slider .information .btn {
+    margin-top: 25px;
+  }
+
+  .main .main-content .upper-slider {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .upper-slider .upper-slider {
+    width: 100%;
+  }
+  .main .main-content .upper-slider .slider {
+    width: 100%;
+  }
   .main .aside {
     width: 100%;
     display: flex;
@@ -1459,11 +1480,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-/* For V.Small Screens  */
+/******************************************
+*******************************************
+ For V.Small Screens 
+*******************************************
+******************************************/
 @media only screen and (max-width: 480px) {
   /* Responsive notification-bar starts  */
   .header {
     position: static;
+  }
+  .logo-bar .brand-logo img {
+    max-width: 130px;
   }
 
   .notification-bar .container {
@@ -1525,19 +1553,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: 1;
   }
 
-  .main .main-content .upper-slider {
-    display: flex;
-    flex-direction: column;
-  }
-  .main .upper-slider .top-slider {
-    width: 100%;
-  }
-
-  .main .upper-slider .information {
-    width: 100%;
-    padding: 20px 10px 10px 10px;
-    text-align: center;
-  }
   .main .aside .aside-banners img {
     width: 100%;
     margin-bottom: 5px;
