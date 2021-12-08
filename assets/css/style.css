@@ -542,11 +542,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .contact-sec .contact-cards .card {
   display: flex;
   flex-direction: column;
-  background: #3d4e5a;
   text-align: center;
   margin: 1px;
   padding: 20px 0;
 }
+
 .contact-sec .contact-cards .card h3 {
   font-family: "HelveticaNeue";
   font-weight: 400;
@@ -554,11 +554,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
+  padding: 5px;
 }
 .contact-sec .contact-cards .card h3 > span {
   font-size: 21px;
   line-height: 22px;
   font-weight: bold;
+  /* display: block; */
 }
 .contact-sec .contact-cards .card:nth-child(even) {
   box-shadow: 0 0 5px #000;

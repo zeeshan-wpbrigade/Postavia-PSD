@@ -51,8 +51,7 @@
   .contact-sec .contact-cards {
     max-width: 100%;
     margin-right: 0px;
-  grid-template-columns: repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
   }
   .footer .bottom-footer .container {
     display: flex;
@@ -71,12 +70,11 @@
     justify-content: center;
     padding: 30px;
   }
-  .main .aside .aside-banners img{
+  .main .aside .aside-banners img {
     width: 50%;
     margin-bottom: 5px;
   }
 }
-
 
 /* For V.Small Screens  */
 @media only screen and (max-width: 480px) {
@@ -98,10 +96,9 @@
   .contact-sec .contact-cards .card {
     width: 100%;
   }
-  
-  .contact-sec .contact-cards {
-  grid-template-columns: repeat(1, 1fr);
 
+  .contact-sec .contact-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .main .main-content .upper-slider {
@@ -111,13 +108,13 @@
   .main .upper-slider .top-slider {
     width: 100%;
   }
-  
+
   .main .upper-slider .information {
     width: 100%;
     padding: 20px 10px 10px 10px;
     text-align: center;
   }
-  .main .aside .aside-banners img{
+  .main .aside .aside-banners img {
     width: 100%;
     margin-bottom: 5px;
   }
