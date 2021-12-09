@@ -71,17 +71,17 @@ $(document).ready(function () {
   });
 
   // 7. Just Logo-Bar in Header fixed on mobile
-  $(window).scroll(function () {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 200) {
-        $(".logo-bar").addClass("logo-fix");
-      } else {
-        $(".logo-bar").removeClass("logo-fix");
+  // $(window).scroll(function () {
+  //   if (window.matchMedia("(max-width: 768px)").matches) {
+  //     var scroll = $(window).scrollTop();
+  //     if (scroll >= 200) {
+  //       $(".logo-bar").addClass("logo-fix");
+  //     } else {
+  //       $(".logo-bar").removeClass("logo-fix");
 
-      }
-    }
-  });
+  //     }
+  //   }
+  // });
 
 
 });
