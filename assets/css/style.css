@@ -1231,6 +1231,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: block;
   margin-right: 20px;
 }
+.footer .bottom-footer .links ul > li > a:hover {
+  text-decoration: underline;
+}
 .footer .bottom-footer .site-logo {
   display: flex;
   justify-content: center;
